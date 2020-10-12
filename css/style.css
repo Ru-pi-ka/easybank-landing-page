@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Public Sans', sans-serif;
+}
+.background{
+    
+    background-image:  url(../images/image-mockups.png),  url(../images/bg-intro-desktop.svg.png) ;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top, right top;
+    border: 1px hsl(0, 0%, 98%) solid;
+    min-height:400px;
+     padding: 3rem;
+    overflow: hidden;    
+}
+@media (max-width: 375px){
+ 
+ .background{   
+ background-image:  url(../images/image-mockups.png),  url(../images/bg-intro-mobile.svg.png) ;
+ width: 90%;
+ min-height:300px;
+ background-position: right top, right top;
+ padding: 5px;
+ 
+ }
+}
+.title-col{
+    margin-top: 175px;
+    
+}
+.card-heading:hover{
+	color: #31D35C;
+    text-decoration: none;
+
+
+}
+p{
+	font-size: 15px;
+    font-weight: lighter;
+    color: rgb(87, 78, 78);
+}	
+.btn{
+	background-image: linear-gradient(to right, #31d35c, #00d192, #00cbbb, #00c2d4, #2bb7da);
+	border-radius: 25px;
+	width: 170px;
+}
+.btn:hover{
+	color: white;
+	filter: contrast(150%);
+}
